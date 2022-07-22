@@ -12,6 +12,8 @@ function random()
     
    function face(pache)
    { 
+    var winner;
+
     if (n1 == 1){
         pache = "images/dice1.png";
     }
@@ -34,6 +36,17 @@ function random()
 
     if (n1 == 6){
         pache = "images/dice6.png";
+    }
+
+    if (winner>n1){
+        winner = winner;
+    }
+    else if (winner<n1){
+        winner = n1;
+    }
+
+    else{
+        alert("No Winners!");
     }
     return pache
     }
